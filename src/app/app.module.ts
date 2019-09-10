@@ -8,6 +8,9 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FirebaseMessaging } from '@ionic-native/firebase-messaging/ngx';
+import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
+import { Firebase } from '@ionic-native/firebase/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +19,9 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
+    FirebaseMessaging,
+    LocalNotifications,
+    Firebase,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

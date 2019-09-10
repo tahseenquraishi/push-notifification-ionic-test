@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FirebaseMessaging } from '@ionic-native/firebase-messaging/ngx';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private firebaseMessaging: FirebaseMessaging) {
+    // this.messaging();
+  }
+
+  // messaging(){
+  //   this.firebaseMessaging.logEvent('page_view', {page: "dashboard"})
+  // .then((res: any) => console.log(res))
+  // .catch((error: any) => console.error(error));
+  // }
 
 }
