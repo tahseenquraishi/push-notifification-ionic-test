@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FirebaseMessaging } from '@ionic-native/firebase-messaging/ngx';
 import { LocalNotifications } from '@ionic-native/local-notifications/ngx';
 import { Firebase } from '@ionic-native/firebase/ngx';
+import { Push } from '@ionic-native/push/ngx';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +24,7 @@ import { Firebase } from '@ionic-native/firebase/ngx';
     FirebaseMessaging,
     LocalNotifications,
     Firebase,
+    Push,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
